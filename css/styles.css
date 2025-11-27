@@ -1,1 +1,40 @@
-body { background: #000; color: #fff; }
+:root{
+  --bg:#0b0d10; --card:#0f1216; --muted:#bfc6d1; --accent:#4fd1c5; --accent-2:#7c5cff;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:#e6eef8}
+.container{max-width:1100px;margin:0 auto;padding:18px}
+.site-header{background:linear-gradient(90deg,#07101733,transparent);padding:16px 0}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;letter-spacing:1px}
+.logo span{color:var(--accent-2)}
+nav a{color:var(--muted);margin-left:16px;text-decoration:none}
+.hero{padding:48px 0}
+.hero-inner{display:flex;gap:24px;align-items:center}
+.hero-text h2{font-size:38px;margin:6px 0}
+.hero-text p{color:var(--muted);max-width:600px}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.06);cursor:pointer}
+.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#04121a;border:none}
+.btn.outline{border:1px solid rgba(255,255,255,0.06)}
+.btn.big{padding:14px 28px;font-size:18px}
+.hero-card{background:linear-gradient(180deg,#08101880,#0c1116);padding:18px;border-radius:12px}
+.features{padding:36px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:var(--card);padding:16px;border-radius:10px}
+.products-grid{margin-top:18px}
+.product-card{background:linear-gradient(180deg,#0e1317,#0b0f12);padding:12px;border-radius:10px;display:flex;flex-direction:column;gap:8px}
+.product-card img{width:100%;border-radius:8px}
+.product-actions, .card-actions{display:flex;gap:8px;margin-top:8px}
+.product-preview{display:flex;gap:16px;align-items:center}
+.product-detail{display:flex;gap:20px;flex-wrap:wrap}
+.product-meta{max-width:560px}
+.auth{max-width:420px;margin:60px auto;padding:22px;background:var(--card);border-radius:10px}
+label{display:block;margin-bottom:10px;color:var(--muted)}
+input{width:100%;padding:10px;border-radius:8px;border:1px solid #161b20;background:#0b0f12;color:#fff}
+.site-footer{padding:20px 0;border-top:1px solid rgba(255,255,255,0.03);margin-top:40px}
+.back-link{display:inline-block;margin:8px 0;color:var(--muted)}
+.product-buy{margin-top:12px}
+.license{background:#081018;padding:12px;border-radius:8px;margin-bottom:8px}
+.notes{margin-top:12px;color:var(--muted)}
+@media(max-width:800px){.hero-inner{flex-direction:column}.product-detail{flex-direction:column}}
+
