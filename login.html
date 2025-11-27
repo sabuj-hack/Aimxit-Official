@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — AIMXIT OFFICIAL</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="auth container">
+    <h2>Login</h2>
+    <form id="loginForm" onsubmit="return demoLogin(event)">
+      <label>Username
+        <input name="username" required>
+      </label>
+      <label>Password
+        <input name="password" type="password" required>
+      </label>
+      <label>Key (optional)
+        <input name="key">
+      </label>
+      <div class="auth-actions">
+        <button class="btn primary" type="submit">Login</button>
+        <a class="btn" href="register.html">Register</a>
+      </div>
+    </form>
+  </main>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
